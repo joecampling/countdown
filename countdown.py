@@ -8,13 +8,20 @@ import pandas as pd
 import numpy as np
 
 from functions import adder, multiplier, division, minus, adder_arr, minus_arr, multiplier_arr, divider_arr
-
+print('Input starting numbers:')
+a = int(input('First: '))
+b = int(input('Second: '))
+c = int(input('Third: '))
+d = int(input('Fourth: '))
+e = int(input('Fifth: '))
+f = int(input('Sixth: '))
+target = int(input('Target: '))
 df = pd.DataFrame({'Numbers': [], 'History': []})
-numbers = [[1, 2, 3, 4, 5, 6]]
+numbers = [[a, b, c, d, e, f]]
 history = [[]]
-target = 125
+#target = 940
 df = df.append({'Numbers': numbers, 'History': []}, ignore_index = True)
-print('Numbers:', numbers)
+print('Numbers:', numbers[0])
 print('Target:', target)
 processing = True
 i = 0
